@@ -45,7 +45,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("LITECOIND", "testcoind")
+            self.binary = os.getenv("TESTCOIND", "testcoind")
         else:
             self.binary = binary
         self.stderr = stderr
